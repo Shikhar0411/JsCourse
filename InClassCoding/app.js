@@ -1,14 +1,18 @@
-function sum(num1, num2, fnToCall) {
-    let result = num1 + num2;
-    fnToCall(result)
-}
+// map, filter and arrow functions
+let arr = [45,23,91];
+console.log(arr)
+let a1 = arr.map((value) => {
+    return value+1;
+})
 
-function displayResult(data) {
-    console.log("The result is : " + data);
-}
+let a2 = arr.filter((value) => {
+    return value >  30;
+})
 
-function displayResultPassive(data) {
-    console.log("The result was : " + data);
-}
+// let a3 = arr.reduce((value) => {
+//     return value+1;
+// })
 
-sum(1,2,displayResultPassive)
+console.log(a1);
+console.log(a2);
+//console.log(a3);
